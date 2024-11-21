@@ -1,10 +1,8 @@
 def esPalindrome(a):
-    c = ''
-    for i in range(len(a) - 1, -1, -1):
-        c += a[i]
-
-
-    return c == a
+    for i in range(len(a)):
+        if a[i] != a[-i-1]:
+            return False
+        return True
 
 # PROGRAMA PRINCIPAL
 a = str(input("DIGITE LA CADENA: "))
